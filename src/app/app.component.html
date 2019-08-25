@@ -1,10 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="https://designcrafts.online/wp-content/uploads/edd/26-Quotes-Logo-Free-Vector-1000x625.jpg">
-</div>
+  <img width="300" alt="Quote Logo" src="https://designcrafts.online/wp-content/uploads/edd/26-Quotes-Logo-Free-Vector-1000x625.jpg">
+</div> -->
 <!-- <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
@@ -18,4 +18,14 @@
   </li>
 </ul> -->
 
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+<app-quote></app-quote>
+<div>
+    <h1>My Quotes</h1>
+    <ul>
+        <li *ngFor='let quote of quotes'>
+          {{quote.name}}
+        </li>
+    </ul>
+    <p *ngIf='Quotes.length > 5'>Quotes is key of power</p>
+  </div>

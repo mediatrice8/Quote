@@ -1,0 +1,15 @@
+import { Component, OnInit,Input } from '@angular/core';
+import { QuoteClass  } from '../quote-class';
+@Component({
+  selector: 'app-quote-detail',
+  templateUrl: './quote-detail.component.html',
+  styleUrls: ['./quote-detail.component.css']
+})
+export class QuoteDetailComponent implements OnInit {
+  @Input() quote: QuoteClass;
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
