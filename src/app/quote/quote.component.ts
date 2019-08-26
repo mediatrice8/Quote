@@ -14,6 +14,12 @@ export class QuoteComponent implements OnInit {
     new Quote (5 ,'A man who dares to waste one hour of time has not discovered the value of life.','Charles Darwin','Peter',new Date(1923,6,18))
 
   ];
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
   toggleDetails(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }
@@ -25,12 +31,6 @@ export class QuoteComponent implements OnInit {
         this.quotes.splice(index,1)
       }
     }
-  }
-  addNewQuote(quote){
-    let quoteLength = this.quotes.length;
-    quote.id = quoteLength+1;
-    quote.completeDate = new Date(quote.completeDate)
-    this.quotes.push(quote)
   }
   constructor() { }
 
