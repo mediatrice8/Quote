@@ -5,7 +5,7 @@ Mediatrice KAMPIRE
  ### project is useful
  It will be useful for people who want to add quote to platform and who wants to vote or satsfy with that quote ,he/she allowed to vote
  ### How users can get started with the project
- A user can come and found the form then fill according to the information should enter into form then click to add quote  or for who want to vote he/she may come and see the quotes if satsfy with it they allowed to vote
+ A user can come and found the form then fill according to the information should enter into form then click to add quote  or for who want to vote he/she may come and see the quotes if satsfy with it they allowed to vote or unvote
 
 ## Development server
 
