@@ -11,7 +11,7 @@
             <li>{{quote.name}}</li>
           </ul>
           <!-- <h6 id={{i}} appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h6> -->
-          <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">Show</button>
         </div>
 
         <div *ngIf='quote.showAuthor'>
